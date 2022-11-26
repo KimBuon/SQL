@@ -1,0 +1,25 @@
+//create a cosmetics store database//
+
+CREATE TABLE makeup_store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, type TEXT, brand TEXT);
+
+INSERT INTO makeup_store VALUES
+(1, "concealer", 20, "face", "Kosas"),
+(2, "foundation", 40, "face", "Kosas"),
+(3, "brow_pen", 20, "brows", "Refy"),
+(4, "brow_gel", 20, "brows", "Refy"),
+(5, "moisturizer", 30, "face", "Glow_Recipe"),
+(6, "eyeshadow", 20, "eyes", "Laura_Mercier"),
+(7, "eyeliner", 15, "eyes", "Urban_Decay"),
+(8, "mascara", 20, "eyes", "Benefit"),
+(9, "blush", 20, "face", "Rare_Beauty"),
+(10, "highlighter", 15, "face", "Wander_Beauty"),
+(11, "contour", 15, "face", "Fenty"),
+(12, "freckle_pen", 12, "face", "Freck"),
+(13, "lip_liner", 8, "lips", "NYX"),
+(14, "lipstick", 25, "lips", "Buxom"),
+(15, "lip_gloss", 20, "lips", "Buxom");
+
+//display the database ordered by price//
+
+SELECT * FROM makeup_store
+ORDER BY price ASC;
